@@ -1,3 +1,7 @@
+.AppHeader-globalBar *{
+    color: #fff !important;
+    fill: #fff !important;
+}
 .AppHeader-localBar .js-repo-nav ul li a:hover{
     background-color: transparent !important;
 }
@@ -9,22 +13,45 @@
     box-shadow: var(--btn-box-shadow) !important;
     color: #555 !important;
 }
-.AppHeader-localBar .js-repo-nav ul li:hover{
+a.AppHeader-context-item{
+    border-radius: 3px !important;
+    border: var(--btn-border) !important;
+    background: var(--btn-bg) !important;
+    box-shadow: var(--btn-box-shadow) !important;
+  padding: 2px 4px !important;
+    margin: 0 4px !important;
+
+}
+.AppHeader-context-item-label{
+    color: #555 !important;
+
+}
+.AppHeader-context{
+    padding-top: 2px !important;
+    border-radius: 3px !important;
+    height: 33px !important;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 45%, rgba(255, 255, 255, 0.30) 0%, rgba(207, 207, 207, 0.1)) !important;
+    backdrop-filter: blur(2px ) !important;
+    border: 1px solid rgba(255, 255, 255, 0.67) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.45) !important;
+}
+.AppHeader-localBar .js-repo-nav ul li:hover,  a.AppHeader-context-item:hover {
     background: var(--btn-hover) !important;
 }
-.AppHeader-localBar .js-repo-nav ul li:active{
+
+.AppHeader-localBar .js-repo-nav ul li:active, a.AppHeader-context-item:active {
     box-shadow: var(--btn-active-box-shadow) !important;
+
 }
 .AppHeader-localBar{
     appearance: toolbox !important;
 }
 .AppHeader-globalBar{
     background: #555;
+    padding: 4px !important;
+    padding-bottom: 2px !important;
 }
-.AppHeader-globalBar *{
-    color: #fff !important;
-    fill: #fff !important;
-}
+
 .AppHeader-searchButton{
     background: #f6f6f6 !important;
     border-color: #8e8f8f !important;
